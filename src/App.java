@@ -15,6 +15,9 @@ public class App {
             System.out.println(cards[index]);
             index++;
         }
+
+        System.out.println(Card.getNumCards());
+
         // printing each card as you create it. 
     }
 }
