@@ -1,5 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
+<<<<<<< HEAD
         Card[] cards = new Card[54];
         // Use nested loops to create a full deck (plus two Jokers)
         int index = 0;
@@ -19,5 +20,11 @@ public class App {
         System.out.println(Card.getNumCards());
 
         // printing each card as you create it. 
+=======
+        Deck deck = new Deck();
+        System.out.println(deck.drawCard());
+        System.out.println(deck.drawCard());
+        System.out.println(deck);
+>>>>>>> 5debef4d0b51a236f1249cea5d798cfafd42ed3d
     }
 }
