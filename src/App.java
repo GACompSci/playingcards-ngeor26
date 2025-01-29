@@ -10,7 +10,7 @@ public class App {
         Hand hand = new Hand(5, deck);
         hand.printHand();
         System.out.println("drawing");
-        System.out.println(hand.playCard(2, 1));
+        System.out.println(hand.cardPresent(2, 1));
         System.out.println("sorting");
         hand.sortHand();
         hand.printHand();
