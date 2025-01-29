@@ -43,21 +43,20 @@ public class Hand {
     public void sortHand(){
         int n = hand.size();
         boolean swapped;
-  
-    for (int i = 0; i < n - 1; i++) {
-        swapped = false;
-        for (int j = 0; j < n - i - 1; j++) {
-            if (hand.get(j).getValue() > hand.get(j+1).getValue()) {
-                Card temp = hand.get(j);
-                hand.set(j, hand.get(j+1));
-                hand.set(j+1, temp);
-                swapped = true;
+        for (int i = 0; i < n - 1; i++) {
+            swapped = false;
+            for (int j = 0; j < n - i - 1; j++) {
+                if (hand.get(j).getValue() > hand.get(j+1).getValue()) {
+                    Card temp = hand.get(j);
+                    hand.set(j, hand.get(j+1));
+                    hand.set(j+1, temp);
+                    swapped = true;
+                }
             }
+        
+            // If no two elements were swapped, then break
+            if (!swapped)
+                break;
         }
-      
-        // If no two elements were swapped, then break
-        if (!swapped)
-            break;
-    }
     }
 }
