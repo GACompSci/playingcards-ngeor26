@@ -3,9 +3,9 @@ public class App {
         Deck deck = new Deck();
         // System.out.println(deck.drawCard());
         // System.out.println(deck.drawCard());
-        deck.printContents();
+        // deck.printContents();
 
-        System.out.println("dfsfksdfljk");
+        // System.out.println("dfsfksdfljk");
 
         Hand hand = new Hand(5, deck);
         hand.printHand();
