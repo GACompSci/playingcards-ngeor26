@@ -3,7 +3,7 @@ public class App {
         Deck deck = new Deck();
         // System.out.println(deck.drawCard());
         // System.out.println(deck.drawCard());
-        System.out.println(deck);
+        deck.printContents();
 
         Hand hand = new Hand(5, deck);
         hand.printHand();
