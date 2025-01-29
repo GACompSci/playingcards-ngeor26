@@ -11,7 +11,6 @@ public class Card {
         suit = 0;
         name = "Joker";
         numCards++;
-        System.out.println(numCards);
     }
 
     public Card(int _value, int _suit){
