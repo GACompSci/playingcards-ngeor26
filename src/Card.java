@@ -38,7 +38,6 @@ public class Card {
             name += "Spades";
         }
         numCards++;
-        System.out.println(numCards);
     }
 
     public int getValue(){
