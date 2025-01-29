@@ -28,6 +28,37 @@ public class Hand {
             }
         }
         return null;
+    }
 
+    public void addCard(Card card){
+        hand.add(card);
+    }
+
+    public void printHand(){
+        for(Card card : hand){
+            System.out.println(card);
+        }
+    }
+
+    public void sortHand(){
+        int n = hand.size();
+        boolean swapped;
+  
+    for (int i = 0; i < n - 1; i++) {
+        swapped = false;
+        for (int j = 0; j < n - i - 1; j++) {
+            if (hand.get(j).getValue() > hand.get(j+1).getValue()) {
+                Card temp = hand.get(j);
+                // swap(arr[j], arr[j + 1]);
+                hand.set(j, hand.get(j+1));
+                hand.set(j+1, temp);
+                swapped = true;
+            }
+        }
+      
+        // If no two elements were swapped, then break
+        if (!swapped)
+            break;
+    }
     }
 }
