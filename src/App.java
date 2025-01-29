@@ -13,6 +13,7 @@ public class App {
         System.out.println(hand.cardPresent(2, 1));
         System.out.println("sorting");
         hand.sortHand();
+        hand.addCard(new Card());
         hand.printHand();
     }
 }
