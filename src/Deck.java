@@ -11,7 +11,7 @@ public class Deck {
                 index++;
             }
         }
-        shuffle();
+        // shuffle();
     }
 
     public void shuffle() {
