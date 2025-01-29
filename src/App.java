@@ -4,5 +4,8 @@ public class App {
         System.out.println(deck.drawCard());
         System.out.println(deck.drawCard());
         System.out.println(deck);
+
+        Hand hand = new Hand(5, deck);
+        hand.printHand();
     }
 }
