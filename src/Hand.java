@@ -49,7 +49,6 @@ public class Hand {
         for (int j = 0; j < n - i - 1; j++) {
             if (hand.get(j).getValue() > hand.get(j+1).getValue()) {
                 Card temp = hand.get(j);
-                // swap(arr[j], arr[j + 1]);
                 hand.set(j, hand.get(j+1));
                 hand.set(j+1, temp);
                 swapped = true;
